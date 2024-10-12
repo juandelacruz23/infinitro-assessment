@@ -1,4 +1,5 @@
 import Link from "../../common/Link";
+import Title3 from "../../common/Title3";
 
 const Footer = () => {
   return (
@@ -9,26 +10,26 @@ const Footer = () => {
       <p>Copyrights 2023</p>
       <nav className="flex">
         <ul>
-          <li>Links</li>
+          <li><Title3>Links</Title3></li>
           <li><Link>Home</Link></li>
           <li><Link>Battles</Link></li>
           <li><Link>Rewards</Link></li>
         </ul>
         <ul>
-          <li>Other</li>
+          <li><Title3>Other</Title3></li>
           <li><Link>Help</Link></li>
           <li><Link>Support</Link></li>
           <li><Link>Contact</Link></li>
         </ul>
         <ul>
-          <li>Legal</li>
+          <li><Title3>Legal</Title3></li>
           <li><Link>Terms</Link></li>
           <li><Link>Conditions</Link></li>
           <li><Link>Cookies</Link></li>
         </ul>
       </nav>
       <div>
-        <h3 className="text-center">Payment options</h3>
+        <Title3 alignment="center">Payment options</Title3>
         <div className="text-center">
           Visa - Bitcoin
         </div>
