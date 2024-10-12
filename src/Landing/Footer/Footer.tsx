@@ -7,7 +7,7 @@ const Footer = () => {
       <h2>Logo</h2>
       <p>Here goes a short description of the company</p>
       <div>Brands</div>
-      <p>Copyrights 2023</p>
+      <p className="hidden md:block">Copyrights 2023</p>
       <nav className="flex">
         <ul>
           <li><Title3>Links</Title3></li>
@@ -33,6 +33,7 @@ const Footer = () => {
         <div className="text-center">
           Visa - Bitcoin
         </div>
+        <p className="block md:hidden">Copyrights 2023</p>
       </div>
     </div>
   );
