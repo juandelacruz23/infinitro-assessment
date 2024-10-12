@@ -1,3 +1,4 @@
+import Link from "../../common/Link";
 
 const Footer = () => {
   return (
@@ -9,21 +10,21 @@ const Footer = () => {
       <nav className="flex">
         <ul>
           <li>Links</li>
-          <li>Home</li>
-          <li>Battles</li>
-          <li>Rewards</li>
+          <li><Link>Home</Link></li>
+          <li><Link>Battles</Link></li>
+          <li><Link>Rewards</Link></li>
         </ul>
         <ul>
           <li>Other</li>
-          <li>Help</li>
-          <li>Support</li>
-          <li>Contact</li>
+          <li><Link>Help</Link></li>
+          <li><Link>Support</Link></li>
+          <li><Link>Contact</Link></li>
         </ul>
         <ul>
           <li>Legal</li>
-          <li>Terms</li>
-          <li>Conditions</li>
-          <li>Cookies</li>
+          <li><Link>Terms</Link></li>
+          <li><Link>Conditions</Link></li>
+          <li><Link>Cookies</Link></li>
         </ul>
       </nav>
       <div>
