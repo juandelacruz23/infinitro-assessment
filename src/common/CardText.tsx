@@ -1,7 +1,22 @@
+import classNames from "classnames";
 import { FC } from "react";
 
-const CardText: FC<{ children: string }> = ({ children }) => {
-  return <p className="opacity-70">{children}</p>;
+interface CardTextProps {
+  children: string;
+  textAlign?: "center";
+}
+
+const CardText: FC<CardTextProps> = ({ children, textAlign }) => {
+  return (
+    <p
+      className={classNames(
+        "text-sm opacity-70",
+        textAlign && `md:text-${textAlign}`,
+      )}
+    >
+      {children}
+    </p>
+  );
 };
 
 export default CardText;
