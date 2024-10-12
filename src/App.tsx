@@ -1,8 +1,8 @@
-import Footer from "./Landing/Footer/Footer";
+import LandingPage from "./Landing/LandingPage";
 
 function App() {
   return <>
-    <Footer />
+    <LandingPage />
   </>;
 }
 
