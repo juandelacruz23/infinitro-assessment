@@ -1,9 +1,26 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Badge from "../common/Badge";
 import Card from "../common/Card";
 import CardSubtitle from "../common/CardSubtitle";
 import CardText from "../common/CardText";
 import CardTitle from "../common/CardTitle";
 import formatPercentage from "../utils/formatPercentage";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FC } from "react";
+import classNames from "classnames";
+
+const CopyLink: FC<{ showMd?: boolean }> = ({ showMd }) => {
+  const className = classNames(
+    "bg-white/5 text-white text-sm rounded-lg py-2 px-3.5 mt-2 md:mr-10",
+    showMd ? "hidden md:block" : "md:hidden",
+  );
+  return (
+    <div className={className}>
+      <FontAwesomeIcon className="mr-3" icon={faLink} />
+      platform.com/link/415rebfiaeubf
+    </div>
+  );
+};
 
 const Header = () => {
   return (
@@ -20,10 +37,11 @@ const Header = () => {
             <div className="leading-none my-5 text-lg">
               <Badge>2</Badge> Friends referred
             </div>
+            <CopyLink showMd />
           </div>
           <img src="/images/refer-friends.png" alt="Refer friends" />
         </div>
-        <div>platform.com/link/415rebfiaeubf</div>
+        <CopyLink />
       </Card>
       <Card className="flex md:flex-col-reverse md:items-center gap-5">
         <div className="md:flex md:flex-col md:items-center">
