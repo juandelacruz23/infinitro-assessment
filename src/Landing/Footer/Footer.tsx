@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "../../common/Link";
 import Title3 from "../../common/Title3";
+import { faBitcoin, faCcVisa, faDiscord, faInstagram, faReddit, faTiktok, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -8,7 +10,14 @@ const Footer = () => {
         <h2 className="uppercase font-bold text-lg">Logo</h2>
         <p className="opacity-70">Here goes a short description of the company</p>
       </div>
-      <div>Brands</div>
+      <div className="flex gap-3">
+        <FontAwesomeIcon icon={faTwitter} />
+        <FontAwesomeIcon icon={faDiscord} />
+        <FontAwesomeIcon icon={faTiktok} />
+        <FontAwesomeIcon icon={faYoutube} />
+        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faReddit} />
+      </div>
       <p className="hidden md:block">Copyrights 2023</p>
       <nav className="flex justify-between w-full">
         <ul>
@@ -32,8 +41,13 @@ const Footer = () => {
       </nav>
       <div className="flex flex-col items-center gap-4">
         <Title3>Payment options</Title3>
-        <div>
-          Visa - Bitcoin
+        <div className="flex gap-3">
+          <FontAwesomeIcon icon={faCcVisa} />
+          <FontAwesomeIcon icon={faBitcoin} />
+          <FontAwesomeIcon icon={faCcVisa} />
+          <FontAwesomeIcon icon={faBitcoin} />
+          <FontAwesomeIcon icon={faCcVisa} />
+          <FontAwesomeIcon icon={faCcVisa} />
         </div>
         <p className="md:hidden opacity-70 text-xs">© Copyrights 2023</p>
       </div>
