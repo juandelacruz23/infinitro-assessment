@@ -6,7 +6,7 @@ import formatPrice from "../../utils/formatPrice";
 
 const BoxCard: FC<Box> = ({ name, description, price, state, imageUrl }) => {
   return (
-    <article className="rounded-lg bg-slate-800 p-2.5 flex flex-col justify-between min-h-60 min-w-40 md:min-h-72 md:min-w-56">
+    <article className="rounded-lg bg-slate-800 p-2.5 flex flex-col justify-between min-h-60 min-w-44 md:min-h-72 md:min-w-56">
       <div className="flex justify-between items-start">
         <Badge variant="dark">{formatPrice(price)}</Badge>
         {state === "new" && (
