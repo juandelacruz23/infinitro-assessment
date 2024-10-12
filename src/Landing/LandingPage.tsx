@@ -6,7 +6,7 @@ import RecentBoxes from "./RecentBoxes";
 const LandingPage = () => {
   return (
     <>
-      <main className="flex flex-col gap-10 p-4 pt-6 ">
+      <main className="flex flex-col gap-10 p-4 pt-6 md:grow">
         <Header />
         <BoxSearch />
         <RecentBoxes />
