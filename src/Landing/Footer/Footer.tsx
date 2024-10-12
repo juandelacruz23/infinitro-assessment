@@ -11,10 +11,18 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { CSSProperties } from "react";
+
+const style: CSSProperties = {
+  background: "linear-gradient(180deg, #181A1D 0%, #0F1012 100%)",
+};
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center p-6 pb-8 gap-8 bg-neutral-900 md:items-stretch md:justify-between md:flex-row">
+    <footer
+      style={style}
+      className="flex flex-col items-center p-6 pb-8 gap-8 md:items-stretch md:justify-between md:flex-row"
+    >
       <div className="flex flex-col items-center gap-4 md:items-start">
         <h3 className="uppercase font-bold text-lg">Logo</h3>
         <p className="opacity-70">
