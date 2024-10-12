@@ -1,10 +1,36 @@
+import { useState } from "react";
 import BoxCard from "../common/BoxCard/BoxCard";
+import TagButton from "../common/TagButton";
 import { allBoxes } from "../data/boxes";
 
+const tags = [
+  "all",
+  "new",
+  "featured",
+  "gaming",
+  "electronics",
+  "jewelry",
+  "mix",
+  "others",
+];
+
 const BoxSearch = () => {
+  const [selectedTag, setSelectedTag] = useState("all");
   return (
-    <section>
+    <section className="flex flex-col gap-4">
       <h3>All boxes</h3>
+      <div className="flex gap-1 overflow-auto">
+        {tags.map((tag) => (
+          <TagButton
+            onSelect={setSelectedTag}
+            id={tag}
+            key={tag}
+            selected={tag === selectedTag}
+          >
+            {tag}
+          </TagButton>
+        ))}
+      </div>
       <div className="flex overflow-auto gap-2.5">
         {allBoxes.map((box, i) => (
           <BoxCard {...box} key={i} />
