@@ -7,7 +7,7 @@ import formatPercentage from "../utils/formatPercentage";
 
 const Header = () => {
   return (
-    <header className="p-4 pt-6 flex flex-col gap-6 md:flex-row">
+    <header className="flex flex-col gap-6 md:flex-row">
       <Card>
         <CardTitle>Refer friends</CardTitle>
         <CardText>

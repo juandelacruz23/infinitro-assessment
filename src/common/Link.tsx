@@ -1,8 +1,11 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-const Link: FC<{ children: string, to?: string }> = ({ children, to = "#" }) => {
+const Link: FC<{ children: string; to?: string }> = ({
+  children,
+  to = "#",
+}) => {
   return (
-    <a href={to}>
+    <a className="text-sm" href={to}>
       {children}
     </a>
   );
