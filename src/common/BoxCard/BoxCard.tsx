@@ -26,7 +26,7 @@ const BoxCard: FC<Box> = ({ name, description, price, state, imageUrl }) => {
           )}
         </div>
         <img className="ml-auto" src={imageUrl} alt={`${name} image`} />
-        <header className="bg-black rounded-lg p-2.5">
+        <header className="bg-black/40 rounded-lg p-2.5">
           <Title4>{name}</Title4>
           <p className="opacity-70 text-xs">{description}</p>
         </header>
