@@ -10,8 +10,8 @@ interface TagButton {
 
 const TagButton: FC<TagButton> = ({ onSelect, selected, children, id }) => {
   const className = classNames(
-    "py-2.5 px-4 bg-slate-800 text-sm rounded-lg capitalize",
-    selected ? "font-bold" : "opacity-70",
+    "py-2.5 px-4 bg-slate-800 md:bg-inherit text-sm rounded-lg capitalize",
+    selected ? "font-bold md:bg-slate-800" : "opacity-70",
   );
   return (
     <>
