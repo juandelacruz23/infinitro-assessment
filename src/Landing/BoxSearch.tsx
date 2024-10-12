@@ -19,7 +19,7 @@ const BoxSearch = () => {
   const [selectedTag, setSelectedTag] = useState("all");
   return (
     <section className="flex flex-col gap-4">
-      <h3>All boxes</h3>
+      <h3 className="text-lg font-bold">All boxes</h3>
       <div className="flex gap-1 overflow-auto">
         {tags.map((tag) => (
           <TagButton
