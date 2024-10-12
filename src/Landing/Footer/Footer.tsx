@@ -5,7 +5,7 @@ import { faBitcoin, faCcVisa, faDiscord, faInstagram, faReddit, faTiktok, faTwit
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center p-6 pb-8 gap-8">
+    <footer className="flex flex-col items-center p-6 pb-8 gap-8">
       <div className="flex flex-col items-center gap-4">
         <h2 className="uppercase font-bold text-lg">Logo</h2>
         <p className="opacity-70">Here goes a short description of the company</p>
@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         <p className="md:hidden opacity-70 text-xs">© Copyrights 2023</p>
       </div>
-    </div>
+    </footer>
   );
 };
 
