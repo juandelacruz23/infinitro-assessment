@@ -1,18 +1,18 @@
 import classNames from "classnames";
 import { FC } from "react";
 
-interface Title3Props {
+interface Title4Props {
   children: string;
   alignment?: "center";
 }
 
-const Title3: FC<Title3Props> = ({ children, alignment }) => {
+const Title4: FC<Title4Props> = ({ children, alignment }) => {
   const className = classNames("opacity-70", alignment && `text-${alignment}`)
   return (
-    <h3 className={className}>
+    <h4 className={className}>
       {children}
-    </h3>
+    </h4>
   );
 };
 
-export default Title3;
+export default Title4;
