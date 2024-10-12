@@ -10,7 +10,7 @@ const CardText: FC<CardTextProps> = ({ children, textAlign }) => {
   return (
     <p
       className={classNames(
-        "text-sm opacity-70",
+        "text-xs opacity-70",
         textAlign && `md:text-${textAlign}`,
       )}
     >
