@@ -4,5 +4,6 @@ interface Box {
   state?: "new";
   price: number;
   creator: string;
+  imageUrl: string;
 }
 export default Box;
