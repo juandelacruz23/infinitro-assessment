@@ -17,7 +17,7 @@ const Header = () => {
               passive income for each player who follows your link. Create your
               own campaign for unique referral link.
             </CardText>
-            <div className="leading-none">
+            <div className="leading-none my-5 text-lg">
               <Badge>2</Badge> Friends referred
             </div>
           </div>
