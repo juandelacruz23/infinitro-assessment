@@ -1,3 +1,4 @@
+import Badge from "../common/Badge";
 import Card from "../common/Card";
 import CardSubtitle from "../common/CardSubtitle";
 import CardText from "../common/CardText";
@@ -16,8 +17,8 @@ const LandingPage = () => {
             passive income for each player who follows your link. Create your
             own campaign for unique referral link.
           </CardText>
-          <div>
-            <span>2</span>Friends referred
+          <div className="leading-none">
+            <Badge>2</Badge> Friends referred
           </div>
           <div>platform.com/link/415rebfiaeubf</div>
         </Card>

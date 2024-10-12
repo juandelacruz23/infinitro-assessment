@@ -7,12 +7,8 @@ interface Title4Props {
 }
 
 const Title4: FC<Title4Props> = ({ children, alignment }) => {
-  const className = classNames("opacity-70", alignment && `text-${alignment}`)
-  return (
-    <h4 className={className}>
-      {children}
-    </h4>
-  );
+  const className = classNames("opacity-70", alignment && `text-${alignment}`);
+  return <h4 className={className}>{children}</h4>;
 };
 
 export default Title4;
