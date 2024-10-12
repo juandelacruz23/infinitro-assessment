@@ -30,12 +30,12 @@ const Footer = () => {
           <li><Link>Cookies</Link></li>
         </ul>
       </nav>
-      <div>
-        <Title3 alignment="center">Payment options</Title3>
-        <div className="text-center">
+      <div className="flex flex-col items-center gap-4">
+        <Title3>Payment options</Title3>
+        <div>
           Visa - Bitcoin
         </div>
-        <p className="block md:hidden">Copyrights 2023</p>
+        <p className="md:hidden opacity-70 text-xs">© Copyrights 2023</p>
       </div>
     </div>
   );
