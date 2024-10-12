@@ -3,12 +3,14 @@ import Title3 from "../../common/Title3";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h2>Logo</h2>
-      <p>Here goes a short description of the company</p>
+    <div className="flex flex-col items-center p-6 pb-8 gap-8">
+      <div className="flex flex-col items-center gap-4">
+        <h2 className="uppercase font-bold text-lg">Logo</h2>
+        <p className="opacity-70">Here goes a short description of the company</p>
+      </div>
       <div>Brands</div>
       <p className="hidden md:block">Copyrights 2023</p>
-      <nav className="flex">
+      <nav className="flex justify-between w-full">
         <ul>
           <li><Title3>Links</Title3></li>
           <li><Link>Home</Link></li>
